@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #cf5d5d;
+            color: white;
+        }
+        h2 a {
+        text-decoration: none;
+        color: #333; 
+    }
+    .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .nav-links a:hover {
+            color: #eebcbc; 
+            text-decoration: none;;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Автоматическое размещение элементов */
+            gap: 20px; /* Пробел между изображениями */
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%; /* Картинки заполняют всю доступную ширину */
+            height: auto; /* Сохраняем пропорции */
+            border-radius: 8px; /* Скругляем углы */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+            transition: transform 0.3s ease; /* Плавный эффект при наведении */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Увеличение картинки при наведении */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-name">
+            <h2><a href="../index.html">Desperate Housewives</a></h2>
+        </div>
+
+        <div class="nav-links">
+            <a href="gallery.html"><strong>gallery</strong></a>
+            <a href="contact.html"><strong>contact</strong></a>
+        </div>
+    </header>
+
+    <div class="gallery">
+    <img src="../photo/dh.jpg" alt="1">
+    <img src="../photo/dh2.jpg" alt="2">
+    <img src="../photo/dh3.jpg" alt="3">
+    <img src="../photo/dh4.jpg" alt="4">
+    <img src="../photo/dh5.jpg" alt="5">
+    <img src="../photo/dh6.jpg" alt="6">
+    <img src="../photo/dh7.jpg" alt="7">
+    <img src="../photo/dh8.jpg" alt="8">
+    <img src="../photo/dh9.jpg" alt="9">
+    <img src="../photo/dh10.jpg" alt="10">
+    <img src="../photo/dh11.jpg" alt="11">
+    <img src="../photo/dh12.jpg" alt="12">
+    </div>
+  
+</body>
+</html>
